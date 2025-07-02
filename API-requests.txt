@@ -1,0 +1,36 @@
+SETTINGS PAGE:
+	Set new params for manager PATCH to UPDATE some params in manager's info 
+	GET page of clients 
+
+LOGIN PAGE:
+	POST personal data to log in and GET response - either OK or NOT OK
+	GET register page
+
+REGISTER PAGE:
+	POST to create new manager
+	GET login page
+
+HOME:
+	GET list of clients 
+	PUT change client's status
+	GET CC
+	GET create new client page
+	GET settings page
+
+NEW CLIENT ADD:
+	GET list of clients 
+	POST add new client
+	GET settings page
+
+CC:
+	GET list of clients 
+	GET settings page
+	POST add comment
+	PUT change client data
+
+
+
+
+
+
+		
