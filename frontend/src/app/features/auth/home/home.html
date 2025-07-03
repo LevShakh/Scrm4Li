@@ -1,1 +1,44 @@
-<p>home works!</p>
+<div class="header">
+    <div class="title">SCRM4Li</div>
+    <div class="menu">
+        <span (contextmenu)="onRightClick($event)" class="clients-label">Clients</span>
+        <div *ngIf="showAddClientBtn" class="context-menu" [style.top.px]="contextMenuY" [style.left.px]="contextMenuX">
+        <button (click)="onAddClient()">Add client</button>
+        </div>
+    </div>
+    <div class="manager">
+        <span class="manager-name">Manager name</span>
+        <span class="settings-icon" (click)="openSettings()">⚙️</span>
+    </div>
+</div>
+
+<table class="client-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>CL NAME</th>
+      <th>PHONE</th>
+      <th>STATUS</th>
+      <th>COMMENT</th>
+      <th>SUM OF POLIS</th>
+      <th>STAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{ client.id }}</td>
+      <td>{{ client.name }}</td>
+      <td>{{ client.phone }}</td>
+      <td>
+        <select>
+          <option>Client</option>
+          <option>Lead</option>
+          <option>Inactive</option>
+        </select>
+      </td>
+      <td>{{ client.comment }}</td>
+      <td>{{ client.sum }}</td>
+      <td>{{ client.stage }}</td>
+    </tr>
+  </tbody>
+</table>

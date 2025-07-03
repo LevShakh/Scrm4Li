@@ -1,1 +1,36 @@
-<p>register works!</p>
+<div class="register-container">
+  <h2>Register</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
+    </div>
+
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" />
+    </div>
+
+    <div class="form-group">
+      <label for="login">Login</label>
+      <input type="text" id="login" name="login" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Passwd</label>
+      <input type="password" id="password" name="password" />
+    </div>
+
+    <div class="form-group">
+      <label for="confirm-password">Conf pass</label>
+      <input type="password" id="confirm-password" name="confirm-password" />
+    </div>
+
+    <button type="submit" class="register-btn" (click)="onRegister()">Create account</button>
+  </form>
+</div>
