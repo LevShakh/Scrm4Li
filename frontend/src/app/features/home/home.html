@@ -1,16 +1,4 @@
-<div class="header">
-    <div class="title">SCRM4Li</div>
-    <div class="menu">
-        <span (contextmenu)="onRightClick($event)" class="clients-label">Clients</span>
-        <div *ngIf="showAddClientBtn" class="context-menu" [style.top.px]="contextMenuY" [style.left.px]="contextMenuX">
-        <button (click)="onAddClient()">Add client</button>
-        </div>
-    </div>
-    <div class="manager">
-        <span class="manager-name">Manager name</span>
-        <span class="settings-icon" (click)="openSettings()">⚙️</span>
-    </div>
-</div>
+<app-header />
 
 <table class="client-table">
   <thead>

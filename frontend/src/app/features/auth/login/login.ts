@@ -14,6 +14,6 @@ export class Login {
     // API logics
     //
 
-    this.router.navigate(['/home'])
+    this.router.navigate(['../home'])
   }
 }

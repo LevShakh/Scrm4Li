@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { Router } from '@angular/router';
+import { Header } from '../../shared/header/header';
+
 
 @Component({
   selector: 'app-home',
-  imports: [],
-  templateUrl: './home.html',
-  styleUrl: './home.css'
+  imports: [NgFor, Header],
+  templateUrl: '/home.html',
+  styleUrl: '/home.css'
 })
 export class Home {
+  constructor(private router: Router) {};
+
+
   showAddClientBtn = false;
   contextMenuX = 0;
   contextMenuY = 0;
@@ -23,14 +30,5 @@ export class Home {
     this.contextMenuX = event.clientX;
     this.contextMenuY = event.clientY;
     this.showAddClientBtn = true;
-  }
-
-  onAddClient() {
-    alert('Redirect to add client form or open modal');
-    this.showAddClientBtn = false;
-  }
-
-  openSettings() {
-    alert('Open user settings window (future)');
   }
 }

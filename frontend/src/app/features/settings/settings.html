@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="settings-container">
+  <button class="logout-btn" (click)="logout()">Log out</button>
+  <h2>Settings</h2>
+  <form (ngSubmit)="onSave()" class="settings-form">
+    <label>
+      Manager name
+      <input type="text" [(ngModel)]="form.manager" name="manager" required />
+    </label>
+
+    <label>
+      Phone number
+      <input type="text" [(ngModel)]="form.phone" name="phone" required />
+    </label>
+
+    <label>
+      City
+      <input type="text" [(ngModel)]="form.city" name="city" />
+    </label>
+
+    <label>
+      Login
+      <input type="text" [(ngModel)]="form.login" name="login" required />
+    </label>
+
+    <label>
+      Passwd
+      <input type="password" [(ngModel)]="form.password" name="password" required />
+    </label>
+
+    <button type="submit">Save</button>
+  </form>
+</div>

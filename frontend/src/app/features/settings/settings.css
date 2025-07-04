@@ -1,0 +1,31 @@
+.settings-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.settings-form input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+button {
+  align-self: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}

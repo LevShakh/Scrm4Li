@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+  background: #eee;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gear {
+  cursor: pointer;
+  font-size: 18px;
+}
